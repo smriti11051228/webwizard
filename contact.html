@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        .text_box{
+            height: 300px;
+            width: 600px;
+            border: 2px solid black;
+            margin-left: 100px;
+            margin-top: 20px;
+            background-color: white;
+            text-align: center;
+        }
+        .text_box form hr{
+            width: 80%;
+            
+        }
+        .text_box form input{
+            background: none;
+            border: none;
+            text-decoration: none;
+        }
+        #h1{
+            height: 150px;
+        }
+        #h2{
+        margin-bottom: 50px;
+        }
+        #title{
+            margin-left: 350px;
+            margin-top: 60px;
+            font-weight: bold;
+            color: white;
+            text-shadow:
+            0 0 5px white, /* Adjust the glow intensity and color */
+            0 0 10px  white,
+            0 0 15px white;
+        
+            text-transform: uppercase;
+        }
+        #h{
+            margin-top: 20px;
+        }
+        #sb{
+            background-color: black;
+            font-weight: bold;
+            color: white;
+        }
+        @media(max-width: 786px){
+        
+        #title{
+            margin-left: 150px;
+            margin-top: 60px;
+            font-weight: bold;
+            color: white;
+            text-shadow:
+            0 0 5px white, /* Adjust the glow intensity and color */
+            0 0 10px  white,
+            0 0 15px white;
+        }
+        .text_box{
+            height: 300px;
+            width: 300px;
+            margin-left: 10%;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div id="logo">WebWizards</div>
+        <button id="menu-button">Menu</button>
+        <div class="nav-links">
+            <div><a href="index.html">Home</a></div>
+            <div><a href="services.html">Services</a></div>
+            <div><a href="login.html">Login</a></div>
+            <div><a href="contact.html">Contact</a></div>
+        </div>
+    </nav>
+      <div class="title" id="title">Inquiry</div>
+      <div class=" text_box">
+        <form action="">
+            <input type="text" placeholder="enter your E-mail" id="h" >
+            <hr>
+            <input type="text" placeholder="enter your text here" id="h1" >
+            <hr id="h2">
+            <button id="sb">Submit</button>
+        </form>
+    </div>
+
+    <script src="js1.js">
+    </script>
+</body>
+
+</html>

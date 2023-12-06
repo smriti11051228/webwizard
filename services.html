@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        /* General styles for services */
+        h2 {
+            align-self: center;
+            margin-left: 40%;
+            text-shadow:
+                0 0 5px white,
+                /* Adjust the glow intensity and color */
+                0 0 10px white,
+                0 0 15px white;
+        }
+
+        .service-section {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .service {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px;
+            background-color: #f9f9f9;
+            flex: 0 0 calc(33.33% - 40px);
+            box-sizing: border-box;
+        }
+
+        .service h3 {
+            font-size: 24px;
+            color: #007bff;
+        }
+
+        .service p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .service {
+                flex: 0 0 calc(50% - 40px);
+                
+            }
+        }
+
+        @media (max-width: 576px) {
+            .service {
+                flex: 0 0 calc(100% - 40px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div id="logo">WebWizards</div>
+        <button id="menu-button">Menu</button>
+        <div class="nav-links">
+            <div><a href="index.html">Home</a></div>
+            <div><a href="services.html">Services</a></div>
+            <div><a href="login.html">Login</a></div>
+            <div><a href="contact.html">Contact</a></div>
+        </div>
+    </nav>
+    <h2>Our Services</h2>
+    <div class="service-section">
+
+
+        <div class="service">
+            <h3>Web Design</h3>
+            <p>Crafting visually appealing and user-friendly website layouts.</p>
+        </div>
+        <div class="service">
+            <h3>Web Development</h3>
+            <p>Building custom websites, web applications, and content management systems.</p>
+        </div>
+        <div class="service">
+            <h3>E-commerce Solutions</h3>
+            <p>Designing and developing online stores with features like shopping carts and payment gateways.</p>
+        </div>
+        <div class="service">
+            <h3>Digital Marketing</h3>
+            <p>Offering services like SEO, PPC advertising, and social media marketing to enhance online visibility.</p>
+        </div>
+        <div class="service">
+            <h3>Hosting and Maintenance</h3>
+            <p>Managing website hosting, security, and regular updates for clients.</p>
+        </div>
+    </div>
+
+    <script src="js1.js">
+    </script>
+</body>
+
+</html>

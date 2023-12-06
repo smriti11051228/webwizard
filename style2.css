@@ -1,0 +1,44 @@
+
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    max-width: 60%;
+    text-align: center;
+    text-shadow:
+    0 0 10px white, /* Adjust the glow intensity and color */
+    0 0 20px  white,
+    0 0 30px white
+}
+@media (max-width: 768px) {
+    .centered-text {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 80%;
+        text-align: center;
+        font-weight: bold;
+    } 
+}
+
+p {
+    display: none;
+}
+
+/* Animation */
+p.active {
+    display: block;
+    animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,67 @@
+.center-box {
+    position: relative;
+    top: 40%;
+    left: 15%;
+    text-align: center;
+    display: block;
+    background: none;
+    width: 30%;
+    text-align: center;
+   margin-top: 10%;
+}
+@media (max-width: 786px) {
+    .center-box {
+    position: relative;
+    top: 50%;
+    left: 25%;
+    text-align: center;
+    display: block;
+    background: none;
+    width: 30%;
+
+   margin-top: 10%;
+}
+}
+
+.center-box input {
+    background: none;
+    border: none;
+    text-align: center;
+}
+
+.center-box hr {
+    width: 200px;
+    border: 1px solid black;
+}
+
+.Register {
+    background-color: lightslategray;
+    width: 60px;
+    height: 40px;
+    border-radius: 30%;
+    color: white;
+    box-shadow:
+        0 0 5px white,
+        /* Adjust the glow intensity and color */
+        0 0 10px white,
+        0 0 15px white;
+        margin-bottom: 15%;
+        
+}
+
+.login {
+    background-color: lightslategray;
+    width: 80px;
+    height: 40px;
+    border-radius: 30%;
+    color: white;
+    box-shadow:
+        0 0 5px white,
+        /* Adjust the glow intensity and color */
+        0 0 10px white,
+        0 0 15px white;
+        margin-bottom: 15%;
+}
+#center2-box{
+display: none;
+}

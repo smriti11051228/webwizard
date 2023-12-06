@@ -1,0 +1,113 @@
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('image1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Apply basic styles to the navigation bar */
+        nav {
+
+            color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        /* Style the logo */
+        #logo {
+            font-size: 30px;
+            font-weight: bold;
+            text-shadow:
+            0 0 5px white, /* Adjust the glow intensity and color */
+            0 0 10px  white,
+            0 0 15px white
+        }
+
+        /* Style the menu button */
+        #menu-button {
+            display: none;
+            /* Initially hidden */
+            cursor: pointer;
+            background-color: black;
+            /* Button background color */
+            color: #fff;
+            /* Button text color */
+            border: none;
+            /* Remove button border */
+            border-radius: 5px;
+            /* Rounded corners */
+            padding: 10px 20px;
+            /* Padding around text */
+            font-size: 16px;
+            /* Font size */
+            cursor: pointer;
+            
+            
+        }
+
+        #menu-button:hover {
+            /* Background color on hover */
+            color: white;
+        }
+
+        /* Style the navigation links */
+        .nav-links {
+            display: flex;
+            align-items: center;
+            text-shadow:
+            0 0 5px white, /* Adjust the glow intensity and color */
+            0 0 10px  white,
+            0 0 15px white
+        }
+
+        .nav-links div {
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .nav-links div a{text-decoration: none; color: black;}
+        .nav-links div:hover {
+            padding: 5px 10px;
+            cursor: pointer;
+            text-shadow: 
+            0 0 10px white, /* Adjust the glow intensity and color */
+            0 0 20px  white,
+            0 0 30px white;
+        }
+
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                /* Hide the links */
+            }
+
+            #menu-button {
+                display: block;
+                /* Show the button */
+            }
+
+            .responsive .nav-links {
+                display: block;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                background-image: url('image2.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-attachment: fixed;
+                font-family: Arial, sans-serif;
+            }
+        }
