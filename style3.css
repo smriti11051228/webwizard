@@ -28,6 +28,9 @@
     border: none;
     text-align: center;
 }
+.center-box input::placeholder {
+    color: white;
+}
 
 .center-box hr {
     width: 200px;
