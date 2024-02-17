@@ -28,11 +28,10 @@
     border: none;
     text-align: center;
 }
-.center-box input::placeholder {
-    color: white;
-}
+
 .center-box input[type="password"]::placeholder {
     color: white;
+    font-family: "Courier New", Courier, monospace; /* Ensures consistent rendering of stars */
 }
 
 .center-box hr {
